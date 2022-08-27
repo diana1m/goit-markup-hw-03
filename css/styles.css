@@ -20,12 +20,12 @@
 }
 
  /* body */
+
 body{
     font-family: var(--main-font);
     font-size: 14px;
-    line-height: calc(24 / 14);
     color: var(--primery-text-color);
-    letter-spacing: 0.03em;
+    background-color: var(--light-bg-color);
 }
 
 /* reset */
@@ -71,7 +71,12 @@ img {
     padding-bottom: 94px;
 }
 
-/* header */
+/**
+  |============================
+  | header
+  |============================
+*/
+
 .header {
     border-bottom: 1px solid #ECECEC;
 }
@@ -88,6 +93,7 @@ img {
     font-size: 26px;
     line-height: calc(31 / 26);
     margin-right: 93px;
+    display: block;
 }
 
 .logo-part {
@@ -104,7 +110,7 @@ img {
     gap: 50px;
 }
 
-.nav-item {}
+/* .nav-item {} */
 
 .nav-link {
     color: var(--title-text-color);
@@ -126,13 +132,15 @@ img {
 }
 
 
-.contacts-item {}
+/* .contacts-item {} */
 
 .contacts-link {
     color: inherit;
     font-weight: 500;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .contacts-link:hover,
@@ -140,7 +148,12 @@ img {
     color: var(--accent-text-color);
 }
 
-/* hero */
+/**
+  |============================
+  | Hero
+  |============================
+*/
+
 .hero {
     background-color: var(--bg-color);
     text-align: center;
@@ -187,9 +200,13 @@ img {
     background-color: var(--active-bg-color);
 }
 
-/* features */
-.features {
-}
+/**
+  |============================
+  | features
+  |============================
+*/
+
+/* .features {} */
 
 .visually-hidden {
     position: absolute;
@@ -209,14 +226,14 @@ img {
 .team-list{
     display: flex;
     gap: 30px;
+    flex-basis: 1170px;
 }
 
-.features-item {}
+/* .features-item {} */
 
 .features-suptitle {
-    /* font-weight: 700; */
-    font-size: 14px;
-    line-height: calc(16 /14 );
+    line-height: calc(16 / 14 );
+    letter-spacing: 0.03em;
     text-transform: uppercase;
 
     margin-bottom: 10px;
@@ -224,11 +241,18 @@ img {
     color: var(--title-text-color);
 }
 
-.features-text {}
+.features-text {
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+}
 
-/* about */
+/**
+  |============================
+  | about
+  |============================
+*/
 
-.about {}
+/* .about {} */
 
 .about-title,
 .team-title {
@@ -236,28 +260,34 @@ img {
     font-size: 36px;
     line-height: calc(42 / 36);
     text-align: center;
+    letter-spacing: 0.03em;
 
     margin-bottom: 50px;
 
     color: var(--title-text-color);
 }
 
-.about-item {}
+/* .about-item {}
 
-.about-img {}
+.about-img {} */
 
-/* team */
+/**
+  |============================
+  | team
+  |============================
+*/
+
 .team {
     background-color: var(--secondary-bg-color);
 }
 
-.team-list {}
+/* .team-list {} */
 
 .team-item {
     background-color: var(--light-bg-color);
 }
 
-.team-img {}
+/* .team-img {} */
 
 .team-container{
     padding-top: 30px;
@@ -269,6 +299,7 @@ img {
     font-size: 16px;
     line-height: calc(19 / 16);
     text-align: center;
+    letter-spacing: 0.03em;
 
     margin-bottom: 10px;
 
@@ -276,9 +307,10 @@ img {
 }
 
 .team-info {   
-    /* font-size: 16px; */
+    font-size: 16px;
     line-height: calc(19 / 16);
     text-align: center;
+    letter-spacing: 0.03em;
 }
 
 /**
@@ -299,11 +331,15 @@ img {
     color: var(--light-bg-color);
 }
 
+.footer .logo {
+    margin-bottom: 20px;
+}
+
 .adr {
     font-style: normal;
 }
 
-.footer-list {}
+/* .footer-list {} */
 
 .footer-item {
     margin-bottom: 9px;
@@ -315,10 +351,14 @@ img {
 
 .footer-address{
     color: var(--light-text-color);
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
 }
 
 .footer-contacs {
     color: var(--contacs-text-color);
+    line-height: calc(24 /14);
+    letter-spacing: 0.03em;
 }
 
 .footer-contacs:hover,
@@ -340,17 +380,20 @@ img {
 .btn-list{
     gap: 8px;
     justify-content: center;
+    flex-basis: 575px;
 
     margin-bottom: 50px;
 }
 
-.btn-item {} 
+/* .btn-item {}  */
 
 .btn-portfolio{
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: calc(26 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
 
     padding: 4px 22px;
     border-color: transparent;
@@ -373,16 +416,19 @@ img {
 .portfolio-list {
     flex-wrap: wrap;
     gap: 30px;
+    flex-basis: 1170px;
 }
 
-.portfolio-item {}
+.portfolio-item {
+    flex-basis: calc((100% - 30px * 2) / 3);
+}
 
-.portfolio-img {}
+/* .portfolio-img {}  */
 
 .info-box{
-    padding: 19px 24px;
+    padding: 20px 24px;
     border: 1px solid #EEEEEE;
-    border-top-color: transparent;
+    border-top: 0;
 }
 
 .portfolio-subtitle {
@@ -398,4 +444,5 @@ img {
 .portfolio-info {
     font-size: 16px;
     line-height: calc(30 / 16);
+    letter-spacing: 0.03em;
 }
